@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseList correctly 1`] = `
+<div>
+  <div
+    key="01"
+  >
+    <Link
+      to="/edit/01"
+    >
+      <h2>
+        phone bill
+      </h2>
+      <p>
+        Amount: 
+        250
+          createdAt: 
+        1609799089560
+         
+      </p>
+    </Link>
+    <button
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+  </div>
+  <div
+    key="02"
+  >
+    <Link
+      to="/edit/02"
+    >
+      <h2>
+        water bill
+      </h2>
+      <p>
+        Amount: 
+        120
+          createdAt: 
+        1809749089560
+         
+      </p>
+    </Link>
+    <button
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+  </div>
+  <div
+    key="03"
+  >
+    <Link
+      to="/edit/03"
+    >
+      <h2>
+        WIFI bill
+      </h2>
+      <p>
+        Amount: 
+        500
+          createdAt: 
+        1709711089560
+         
+      </p>
+    </Link>
+    <button
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+  </div>
+</div>
+`;
+
+exports[`should render ExpenseList without expenses correctly 1`] = `
+<div>
+  <p>
+    No Expenses
+  </p>
+</div>
+`;

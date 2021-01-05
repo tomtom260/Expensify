@@ -1,0 +1,53 @@
+{
+  "name": "expensify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "serve": "live-server public",
+    "start": "babel src/app.js --out-file=public/index.js --presets=env,react --watch",
+    "dev-server": "webpack-dev-server",
+    "build": "webpack",
+    "test": "jest --config=jest.config.json --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "moment": "^2.29.1",
+    "react": "^16.14.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.14.0",
+    "react-modal": "^3.12.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^17.0.1",
+    "react-with-direction": "^1.3.1",
+    "redux": "^4.0.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "jest": "^23.6.0",
+    "node-sass": "^4.14.1",
+    "raf": "^3.4.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.11.5"
+  },
+  "jest":{
+    "moduleNameMapper":{
+         "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    }
+  }
+}
