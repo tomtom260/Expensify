@@ -1,13 +1,11 @@
 import {v4 as uuid} from 'uuid'
-import moment from 'moment'
 
 export const addExpense = expense=>({
     type:"ADD_EXPENSE",
     expense:{
-        id:uuid(),
         note:"",
-        createdAt:moment().valueOf(),
         ...expense,
+        id:uuid()
     }
 
 }) 

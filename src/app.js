@@ -8,9 +8,6 @@ import {addExpense} from './action/expenses';
 
 import './styles/styles.scss';
 
-// const store = configureStore()
-// console.log(configureStore)
-
 ReactDOM.render(<Provider store={store}><AppRouter/></Provider>,document.querySelector('#root'))
 
 store.dispatch(addExpense({

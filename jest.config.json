@@ -4,6 +4,12 @@
     ],
     "setupFiles":[
         "raf/polyfill.js",
-        "<rootDir>/src/test/setupTests.js"
-    ]
+        "<rootDir>/src/tests/setupTests.js"
+    ],
+    "moduleNameMapper": {
+        "^.+\\.(css|less|scss)$": "<rootDir>/src/tests/__mocks__/styleMock.js",
+        "^.+\\.(jpg|png|gif|svg)$": "identity-obj-proxy"
+    },
+    "verbose": true,
+    "testURL": "http://localhost/"
 }

@@ -1,6 +1,6 @@
 const path= require('path')
 
-module.exports={
+module.exports = env =>({
     "entry":"./src/app.js",
     "output":{
         "filename":"bundle.js",
@@ -23,9 +23,9 @@ module.exports={
             }
         ]
     },
-    "devtool":"cheap-module-eval-source-map",
+    "devtool":env==="production"?"source-map":"cheap-module-eval-source-map",
     "devServer":{
         "contentBase":path.join(__dirname,'public'),
         "historyApiFallback":true
     }
-}
+})

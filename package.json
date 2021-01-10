@@ -4,10 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "serve": "live-server public",
-    "start": "babel src/app.js --out-file=public/index.js --presets=env,react --watch",
+    "build": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "build": "webpack",
+    "start": "webpack",
     "test": "jest --config=jest.config.json --watchAll"
   },
   "author": "",
@@ -37,7 +36,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
-    "jest": "^23.6.0",
+    "jest": "^22.4.4",
     "node-sass": "^4.14.1",
     "raf": "^3.4.1",
     "sass-loader": "^6.0.6",
@@ -45,9 +44,5 @@
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.11.5"
   },
-  "jest":{
-    "moduleNameMapper":{
-         "\\.(css|less|sass|scss)$": "identity-obj-proxy"
-    }
-  }
+  "jest": { "verbose": true, "testURL": "http://localhost/" }
 }

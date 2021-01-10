@@ -7,17 +7,15 @@ import {connect} from 'react-redux'
 
 import { addTextFilter, sortByAlphabeticalOrder, sortByAmount, 
     sortByDate,setEndDate,setStartDate, setStartAmount, setEndAmount } from '../action/filters';
-
-
     
-class ExpenseFilters extends React.Component{
+export class ExpenseFilters extends React.Component{
     state={
         focusedInput:null
     }
     
     render(){
         return(
-            <div>
+            <div>   
                 <input
                     type="text"
                     value={this.props.filters.text}
@@ -79,8 +77,8 @@ class ExpenseFilters extends React.Component{
 }
 
 
-const mapStatetoProps= state =>({
+const mapStateToProps= state =>({
     filters:state.filters
 })
 
-export default connect(mapStatetoProps)(ExpenseFilters);
+export default connect(mapStateToProps)(ExpenseFilters);
