@@ -7,13 +7,14 @@
     "build": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
-    "heroku-postbuild":"npm run build",
+    "heroku-postbuild": "npm run build",
     "test": "jest --config=jest.config.json --watchAll"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.0.0",
+    "express": "^4.17.1",
     "moment": "^2.29.1",
     "react": "^16.14.0",
     "react-dates": "^21.8.0",
@@ -45,5 +46,8 @@
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.11.5"
   },
-  "jest": { "verbose": true, "testURL": "http://localhost/" }
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  }
 }
