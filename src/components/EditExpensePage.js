@@ -10,7 +10,11 @@ export const EditExpensePage =(props)=>(
             onSubmit={(expense,id)=>props.dispatch(editExpense(id,expense))}
             {...props.expense} 
             history={props.history} />
-        <button onClick={()=>props.dispatch(removeExpense(props.match.params.id))}>Remove Expense</button>    
+        <button onClick={()=>{
+                props.dispatch(removeExpense(props.match.params.id))
+                props.history.push('/')
+            }}
+        >Remove Expense</button>    
     </div>
 )
 

@@ -13,9 +13,9 @@ exports[`should render ExpenseList correctly 1`] = `
       </h2>
       <p>
         Amount: 
-        250
-          createdAt: 
-        1609799089560
+        250.00
+         ETB  createdAt: 
+        January 5, 2021
          
       </p>
     </Link>
@@ -36,9 +36,9 @@ exports[`should render ExpenseList correctly 1`] = `
       </h2>
       <p>
         Amount: 
-        120
-          createdAt: 
-        1809749089560
+        120.00
+         ETB  createdAt: 
+        May 8, 2027
          
       </p>
     </Link>
@@ -59,9 +59,9 @@ exports[`should render ExpenseList correctly 1`] = `
       </h2>
       <p>
         Amount: 
-        500
-          createdAt: 
-        1709711089560
+        500.00
+         ETB  createdAt: 
+        March 6, 2024
          
       </p>
     </Link>

@@ -1,10 +1,11 @@
 import React from 'react';
 import ExpenseFilters from './ExpenseFilters'
 import ExpenseList from './ExpenseList'
+import ExpenseSummary from './ExpenseSummary';
 
 export default ()=>(
     <div>
-        <h1>Expenses</h1>
+        <ExpenseSummary/>
         <ExpenseFilters />
         <ExpenseList  />  
     </div>

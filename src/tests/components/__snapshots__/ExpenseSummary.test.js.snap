@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render file correctly with expenses 1`] = `
+<div>
+  <h1>
+    Viewing
+    <span
+      className="TotalExpense__numberOfExpenses"
+    >
+       
+      3
+       
+    </span>
+    Expense
+    s
+     totalling
+    <span
+      className="TotalExpense__totalExpense"
+    >
+       
+      870.00
+       
+    </span>
+    Birr.
+  </h1>
+</div>
+`;
+
+exports[`should render file correctly with no expenses 1`] = `
+<div>
+  <h1>
+    Viewing
+    <span
+      className="TotalExpense__numberOfExpenses"
+    >
+       
+      0
+       
+    </span>
+    Expense
+     totalling
+    <span
+      className="TotalExpense__totalExpense"
+    >
+       
+      0.00
+       
+    </span>
+    Birr.
+  </h1>
+</div>
+`;

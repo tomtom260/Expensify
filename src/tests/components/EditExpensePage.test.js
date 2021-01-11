@@ -14,9 +14,9 @@ test('dispatch should be called with the edit expense action object',()=>{
         ...expenseData[0]
     }
     delete expense.id
-
     const dispatchSpy = jest.fn()
-    const wrapper= shallow(<EditExpensePage dispatch={dispatchSpy}/>)
+    const pushSpy = jest.fn()
+    const wrapper= shallow(<EditExpensePage dispatch={dispatchSpy} history={{push:pushSpy}} />)
     wrapper.find('ExpenseForm').prop('onSubmit')(expense,"05");
     expect(dispatchSpy).toHaveBeenCalledWith({
         type:"EDIT_EXPENSE",
@@ -28,11 +28,13 @@ test('dispatch should be called with the edit expense action object',()=>{
 
 test('dispatch should be called with the remove expense action object',()=>{
     const dispatchSpy = jest.fn()
-    const wrapper= shallow(<EditExpensePage match={{params:{id:"07"}}} dispatch={dispatchSpy}/>)
+    const pushSpy = jest.fn()
+    const wrapper= shallow(<EditExpensePage match={{params:{id:"07"}}} history={{push:pushSpy}} dispatch={dispatchSpy}/>)
     wrapper.find('button').simulate('click');
     expect(dispatchSpy).toHaveBeenCalledWith({
         type:"REMOVE_EXPENSE",
         id:"07",
         }
     )
+    expect(pushSpy).toHaveBeenCalledWith('/')
 })
