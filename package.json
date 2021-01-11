@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "webpack -p --env production && node server/server.js",
+    "build": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
     "test": "jest --config=jest.config.json --watchAll"
